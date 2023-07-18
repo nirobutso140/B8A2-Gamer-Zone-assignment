@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+/* common class start*/
+span{
+    background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+/* common class end*/
+
+header  nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 15px;
+    border: 1px solid red;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo p{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.logo img{
+    margin-right: 10px;
+}
+
+nav  ul{
+    display: flex;
+    align-items: center;
+}
+
+ul  li{
+    list-style: none;
+}
+
+li a{
+    text-decoration: none;
+    margin-right: 30px;
+    color: #3C354F;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.fa-brands{
+    font-size: 1.5rem;
+}
+
+.fa-youtube{
+    color: #F61C0D;
+}
+
+/* for mobile */
+
+@media screen and (max-width: 425px) {
+    nav,
+    ul{
+        flex-direction: column;
+        
+    }
+    .nav_inner_ul{
+        flex-direction: row;
+        
+    }
+    .logo{
+        margin-bottom: 30px;
+    }
+    ul li{
+        margin-bottom: 20px;
+    }
+    .nav_inner_ul{
+        margin-top: 20px;
+    }
+ 
+}
+
+/* for tablet */
+
+@media screen and (min-width: 426px) and (max-width: 768px){
+    nav{
+        flex-direction: column;
+    }
+    .logo{
+        margin-bottom: 30px;
+    }
+}
